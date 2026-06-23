@@ -40,4 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+.mcp.json
+
 # End of https://www.toptal.com/developers/gitignore/api/nextjs
