@@ -1,8 +1,11 @@
 {
-  "name": "sendkit-core",
+  "name": "@mrecoderclark/sendkit-core",
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "build": "tsdown"
+  },
   "exports": {
     ".": "./src/index.ts"
   },
