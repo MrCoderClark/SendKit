@@ -1,14 +1,33 @@
 {
-  "name": "@mrecoderclark/sendkit",
+  "name": "@mrcoderclark/sendkit",
   "version": "0.0.0",
-  "private": true,
+  "bin": {
+    "sendkit": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "main": "./dist/index.js",
+  "modules": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "tsdown"
+    "build": "tsdown",
+    "pack:dry": "bun run build && bun pm pack --dry-run",
+    "prepublishOnly": "bun run build"
   },
   "dependencies": {
     "commander": "^15.0.0",
-    "@mrecoderclark/sendkit-core": "workspace:*",
+    "@mrcoderclark/sendkit-core": "workspace:*",
     "zod": "^4.4.3"
   }
 }

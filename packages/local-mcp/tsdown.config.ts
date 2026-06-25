@@ -12,7 +12,7 @@ export default defineConfig({
   outExtensions: () => ({ js: ".js", dts: ".d.ts" }),
   deps: {
     neverBundle: [
-      "@mrecoderclark/sendkit-core",
+      "@mrcoderclark/sendkit-core",
       "@modelcontextprotocol/sdk",
       "zod",
     ],

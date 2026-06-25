@@ -1,7 +1,9 @@
+#!/usr/bin/env node
+
 import { Command } from "commander";
 import { homedir } from "node:os";
 import { dirname, join } from "node:path";
-import { sendTelegramMessage } from "@mrecoderclark/sendkit-core";
+import { sendTelegramMessage } from "@mrcoderclark/sendkit-core";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { z } from "zod";
 
